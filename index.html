@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="assets/styles/style.css">
+  <title>Book Library</title>
+</head>
+<body>
+  <h1 class="row main-center">Book Library</h1>
+  <div class="shadow-15 margin8 padding8 br3">
+    <div class="row margin8">
+      <strong class="w-15">Title</strong>
+      <strong class="w-15">Author</strong>
+      <strong class="w-15">No. of page</strong>
+      <strong class="w-15">Status</strong>
+    </div>
+    <div id="book-list" class="col"></div>
+  </div>
+  <button onclick="document.getElementById('new-book-form').classList.add('col');">Add new Book</button>
+  <form id="new-book-form" class="margin8 padding8 hide shadow-15 br3">
+    <label for="title" class="form-label">Name</label>
+    <input type="text" name="title" class="w-50">
+    <label for="author" class="form-label">Author</label>
+    <input type="text" name="author" class="w-50">
+    <label for="noOfPages" class="form-label">No of pages</label>
+    <input type="number" name="noOfPages" class="w-50">
+    <label class="check-read">
+      <input type="checkbox" name="read" value="true">Has been read
+    </label>
+    <input type="submit" value="Add Book" class="w-50">
+  </form>
+</body>
+<script src="index.js"></script>
+</html>
